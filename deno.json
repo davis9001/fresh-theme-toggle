@@ -1,0 +1,73 @@
+{
+  "name": "@davis9001/fresh-theme-toggle",
+  "version": "0.0.1-alpha.1",
+  "license": "MIT",
+  "nodeModulesDir": "auto",
+  "exports": {
+    ".": "./src/mod.ts",
+    "./plugin": "./src/plugin.ts",
+    "./islands": "./src/islands/mod.ts"
+  },
+  "tasks": {
+    "check": "deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
+    "test": "deno test -A",
+    "release": "deno run -A npm:bumpp --ignore-scripts"
+  },
+  "lint": {
+    "rules": {
+      "tags": [
+        "fresh",
+        "recommended"
+      ]
+    }
+  },
+  "fmt": {
+    "semiColons": true,
+    "singleQuote": true
+  },
+  "exclude": [
+    "**/_fresh/*"
+  ],
+  "publish": {
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "deno.json",
+      "README.md",
+      "LICENSE"
+    ],
+    "exclude": [
+      ".vscode",
+      ".github",
+      "deno.lock",
+      "tests/**"
+    ]
+  },
+  "imports": {
+    "@astral/astral": "jsr:@astral/astral@^0.5.2",
+    "@preact/signals": "npm:@preact/signals@^2.0.1",
+    "@std/expect": "jsr:@std/expect@^1.0.13",
+    "@std/fmt": "jsr:@std/fmt@^1.0.5",
+    "@std/path": "jsr:@std/path@^1.0.8",
+    "@std/streams": "jsr:@std/streams@^1.0.9",
+    "fresh": "jsr:@fresh/core@^2.0.0-alpha.29",
+    "preact": "npm:preact@^10.26.2"
+  },
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.asynciterable",
+      "deno.ns"
+    ],
+    "jsx": "precompile",
+    "jsxImportSource": "preact",
+    "jsxPrecompileSkipElements": [
+      "a",
+      "img",
+      "source",
+      "body",
+      "html",
+      "head"
+    ]
+  }
+}
