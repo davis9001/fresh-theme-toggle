@@ -14,6 +14,6 @@
  *  </nav>
  * )
  * ```
- * See [GitHub]('https://github.com/davis9001/fresh-theme-toggle')
+ * See [GitHub] - https://github.com/davis9001/fresh-theme-toggle'
  */
 export { freshThemeToggle, themeToggleHeadScript } from './plugin.ts';

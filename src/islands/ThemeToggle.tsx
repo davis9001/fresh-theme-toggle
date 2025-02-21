@@ -4,9 +4,13 @@
  *
  * @description
  * Provides a <ThemeToggle /> island component for changing the current theme.
- * Uses the `useState` hook to manage the current theme and updates it when
- * the user clicks the toggle button. The theme is stored in the local storage
- * for persistence across sessions.
+ *
+ * @example
+ * return(
+ *  <nav>
+ *    <ThemeToggle />
+ *  </nav>
+ * )
  */
 import { useState } from 'preact/hooks';
 import { IS_BROWSER } from 'fresh/runtime';
