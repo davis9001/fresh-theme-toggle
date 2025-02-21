@@ -1,16 +1,7 @@
 /**
- * islands/ThemeToggle.tsx
- * @module
+ * The `<ThemeToggle />` island provides a button to switch between light/dark themes.
  *
- * @description
- * Provides a <ThemeToggle /> island component for changing the current theme.
- *
- * @example
- * return(
- *  <nav>
- *    <ThemeToggle />
- *  </nav>
- * )
+ * @see {@link https://github.com/davis9001/fresh-theme-toggle}
  */
 import { useState } from 'preact/hooks';
 import { IS_BROWSER } from 'fresh/runtime';
