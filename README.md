@@ -1,10 +1,10 @@
-# Fresh `<ThemeToggle />`
+# Fresh ThemeToggle
 
-> [!NOTE]\
+> [!WARNING]\
 > Not yet suitable for public use!
 
 > [!NOTE]\
-> This Fresh plugin is only tested on 2.0.0-alpha.29
+> This plugin is only tested on Fresh 2.0.0-alpha.29
 
 A Deno [Fresh 🍋](https://fresh.deno.dev/) light/dark theme toggle button as an
 Island: `<ThemeToggle />`.
